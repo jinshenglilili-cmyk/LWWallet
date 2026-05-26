@@ -189,7 +189,6 @@ const Stake = () => {
             {/* Input Field */}
             <div className="space-y-4 sm:space-y-6">
               <Input
-                label="Amount to Stake"
                 type="number"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
@@ -282,7 +281,7 @@ const Stake = () => {
                   onClick={handleClaim}
                   disabled={claimLoading || !canClaim}
                   // loading={claimLoading}
-                  fullWidth
+                  // fullWidth
                   className="py-3 sm:py-5 text-lg sm:text-xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
                 >
                   <FiGift className="w-6 h-6 sm:w-7 sm:h-7" />
