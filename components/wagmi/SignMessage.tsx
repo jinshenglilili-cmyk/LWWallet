@@ -9,6 +9,7 @@ const SignMessage = () => {
     try {
       const res = await signMessageAsync({ message: "hello world" });
       console.log(res, "res");
+      console.log(res, "res");
       setSignature(res);
     } catch (error) {
       console.log(error, "error");
